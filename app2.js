@@ -1,26 +1,22 @@
 "use strict";
 
-process.title = "Multithread Bitcoin Brute Force by Corvus Codex";
+process.title = "Bitcoin Brute Force by Xuě Láng";
 
-//Created by: Corvus Codex
-//Github: https://github.com/CorvusCodex/
-//Licence : MIT License
+//Created by: Xuě Láng
+//Licence : Black Hat License
 
-//Support my work:
-//BTC: bc1q7wth254atug2p4v9j3krk9kauc0ehys2u8tgg3
-//ETH & BNB: 0x68B6D33Ad1A3e0aFaDA60d6ADf8594601BE492F0
-//Buy me a coffee: https://www.buymeacoffee.com/CorvusCodex
 
 // Importing required modules
 const CoinKey = require('coinkey');
 const fs = require('fs');
 const crypto = require('crypto');
 const cluster = require('cluster');
-const numCPUs = require('os').cpus().length;
+let numCPUs = require('os').cpus().length;
 const blessed = require('blessed');
 
 // Initializing a Set to store addresses
 let addresses;
+numCPUs = 4
 addresses = new Set();
 // Reading data from a file named 'data.txt'
 const data = fs.readFileSync('./data.txt');
@@ -63,7 +59,7 @@ function generate() {
  process.stdout.write('\x07');
  // Logging success message with the public address in green color
 console.log("\x1b[32m%s\x1b[0m", ">> Match Found: " + ck.publicAddress);
-var successString = "Wallet: " + ck.publicAddress + "\n\nSeed: " + ck.privateWif + "\n\nDon't forget to donate : Bitcoin: bc1q7wth254atug2p4v9j3krk9kauc0ehys2u8tgg3";
+var successString = "Wallet: " + ck.publicAddress + "\n\nSeed: " + ck.privateWif + "\n\nDon't forget to donate : Bitcoin: --";
 
 // Saving the wallet and its private key (seed) to a file named 'match.txt'
 fs.writeFileSync('./match.txt', successString, (err) => {
@@ -92,13 +88,7 @@ if (cluster.isMaster) {
         left: 0,
         width: '100%',
         height: '30%',
-        content: `//Created by: Corvus Codex
-//Github: https://github.com/CorvusCodex/
-//Licence : MIT License
-//Support my work:
-//BTC: bc1q7wth254atug2p4v9j3krk9kauc0ehys2u8tgg3
-//ETH & BNB: 0x68B6D33Ad1A3e0aFaDA60d6ADf8594601BE492F0
-//Buy me a coffee: https://www.buymeacoffee.com/CorvusCodex`,
+        content: `//Created by: Xuě Láng`,
         border: {
           type: 'line'
         },

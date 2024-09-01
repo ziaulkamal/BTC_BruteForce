@@ -1,26 +1,3 @@
-<p align="center">
-  <img src="https://github.com/CorvusCodex/Multithread-Bitcoin-Brute-Force/blob/main/multithread%20bitcoin%20bruteforce%20script.png?raw=true">
-</p>
-
-# Multithread Bitcoin Brute Force for P2PKH or legacy address
-
-This is a Node.js script that uses multiple worker processes to generate random private keys for Bitcoin P2PKH or legacy wallets in hexadecimal format and check if they match any of the P2PKH or legacy addresses in a file named `data.txt`. If a match is found,  the script saves the wallet and its private key (seed) in WIF format to a file named ‘match.txt’ and quits program.
-
-## For people without technical experience you can buy the compiled application for windows from here:
-https://www.buymeacoffee.com/CorvusCodex/e/142988
-
-Keep in mind that a Windows app won’t speed up searching or guarantee success.
-
-Check out my Bitcoin Brute-Force calculator
-https://corvuscodex.github.io/Bitcoin-Brute-Force-Calculator-Website/
-
-<h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/corvuscodex"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="corvuscodex" /></a></p><br><br>
-
-<br><br>
-Donate: <br>
-BTC: bc1q7wth254atug2p4v9j3krk9kauc0ehys2u8tgg3 <br>
-ETH & BNB: 0x68B6D33Ad1A3e0aFaDA60d6ADf8594601BE492F0
 
 ## Requirements
 
@@ -44,28 +21,21 @@ ETH & BNB: 0x68B6D33Ad1A3e0aFaDA60d6ADf8594601BE492F0
 
 
 >Support my work:<br>
->BTC: bc1q7wth254atug2p4v9j3krk9kauc0ehys2u8tgg3<br>
->ETH & BNB: 0x68B6D33Ad1A3e0aFaDA60d6ADf8594601BE492F0<br>
->Buy me a coffee: https://www.buymeacoffee.com/CorvusCodex
-
 
 ## Check out my Ethereum Brute-Force Project
-https://github.com/CorvusCodex/Multithread-Ethereum-Brute-Force
 
 ## Support my work for month or year so i can continue to work on my projects:
-https://www.buymeacoffee.com/corvuscodex/membership
 
 ## Buy me some equipment:
-https://www.buymeacoffee.com/corvuscodex/wishlist
 
 ## Disclaimer
 
 The code within this repository comes with no guarantee, the use of this code is your responsibility. I take NO responsibility and/or liability for how you choose to use any of the source code available here. By using any of the files available in this repository, you understand that you are AGREEING TO USE AT YOUR OWN RISK. Once again, ALL files available here are for EDUCATION and/or RESEARCH purposes ONLY. The chances of finding a match are extremely low and it is not recommended to use this script for any illegal or unethical activities.
 
 
-MIT License
+Black Hat License
 
-Copyright (c) 2023 CorvusCodex
+Copyright (c) 2022 Xuě Láng
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
